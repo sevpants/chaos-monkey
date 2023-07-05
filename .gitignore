@@ -1,0 +1,21 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node modules
+node_modules/
+
+# Ignore development files
+*.log
+.vscode/
+
+# Ignore distribution files
+/dist
+/build
+
+# Ignore API keys or secrets
+.env
+secrets.js
+
+# Ignore npm debug logs
+npm-debug.log

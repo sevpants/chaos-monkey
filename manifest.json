@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Chaos Monkey",
+    "description": "Semi-randomly removes old tabs from your browser to help you focus on what's important.",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "activeTab",
+        "tabGroups",
+        "tabs",
+        "activeTab",
+        "alarms",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type:": "module"
+    }
+}
