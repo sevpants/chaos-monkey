@@ -11,8 +11,11 @@ Some things that need to be done:
 - Add a closed tabs page with a list of closed tabs, batched by day and sub-sectioned by time
 - Add a way to restore tabs
 - Add a way to change the duration from creation / last activity to close a tab
+- Add a session param such that if a user passes through a tab but doesn't linger, don't add this as the last active time since it wasn't "really" active
 - Fix some of the data bugginess on installation as well as when you first load your browser
     - This'll also include new tab pages and chrome-extension pages like those created by the various suspender app
+- Determine how to deal with tabs that never receives the url/title values because I opened them without actually going to the page (ctrl+click, middle click, etc)
+    - Maybe prompt the user with "do you still want these? ya never opened them" or something
 
 
 ## Contributing

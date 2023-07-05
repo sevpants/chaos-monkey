@@ -55,7 +55,7 @@ chrome.alarms.onAlarm.addListener(alarm => {
     if (alarm.name === 'checkTabs') {
         checkTabs();
     } else if (alarm.name === 'checkForWorking') {
-        console.log('Just checking if this is working');
+        console.log(`Number of unpinned tabs: ${Object.keys(tabs).length}`);
     }
 });
 
